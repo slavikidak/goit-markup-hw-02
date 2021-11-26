@@ -1,81 +1,194 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-  color: #757575;
-}
+/* Основной цвет текста: #212121 */
+
+/* Дополнительный цвет текста: #757575 */
+
+/* Выделение и акценты синий: #2196F3 */
+
+/* Текст белый: #FFFFFF */
+
+/* Основной цвет секции: #FFFFFF */
+
+/* Дополнительный цвет секции: #2f303a */
+
+/* Кнопка неактивная, секция серая: #f5f4fa */
+
+/* Логотип основной цвет: #000000 */
 
 .logo {
   font-family: "raleway", "oleo-script";
   font-size: 26px;
+  line-height: 1.15;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  line-height: 30.52px;
-  text-decoration: none;
-  color: #000;
-}
-.logo .web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-.menu {
-  font-size: 14px;
+/* Хедер */
+
+header .studio {
+  color: #000000;
+}
+
+/* Меню */
+
+.menu .link {
+  line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 16.41px;
-  text-decoration: none;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
-.menu .item:active,
-.menu .item:hover {
-  color: #2196f3;
+.menu .item:hover,
+.menu .item:focus {
+  color: var(--accent-color);
+}
+
+.menu .active {
+  color: var(--accent-color);
 }
 
 .contacts {
-  color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
-.button {
+.contacts a:focus,
+.contacts a:hover {
+  color: var(--accent-color);
   cursor: pointer;
-  background-color: #f5f4fa;
+}
+
+/* Секция герой */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.hero-section {
+  background-color: var(--secondary-background);
+}
+
+.hero-section .button {
+  cursor: pointer;
+  background-color: var(--button-inactive);
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main);
+}
+
+.hero-section .button:hover,
+.hero-section .button:focus,
+.portfolio-filter .button:hover,
+.portfolio-filter .button:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* Преимущества */
+
+.section .title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.goals .text {
+  line-height: 1.71;
+}
+
+.goals .sub-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.services .title,
+.team .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section.team {
+  background-color: var(--third-section);
+}
+
+.team .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* ++++++ Страница портфолио - начало +++++++*/
+
+.portfolio .button {
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+  background-color: var(--button-inactive);
   border: none;
   border-radius: 4px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
 }
 
-.button:hover {
-  background-color: #2196f3;
-  color: #fff;
+.portfolio .button:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
-.item-title {
-  font-weight: 700;
-  letter-spacing: 0.06em;
+.item > .sub_title {
   font-size: 18px;
-  line-height: 36px;
-}
-.item-subtitle {
-  color: #757575;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  line-height: 30px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
 }
 
-.contact {
+.item > .text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* ++++++ Страница портфолио - окончание +++++++*/
+
+/* Футер */
+
+footer {
+  padding: 60px 0 60px 215px;
+  background-color: var(--secondary-background);
+}
+
+footer .studio {
+  color: var(--white-color);
+}
+
+.address {
+  font-style: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--white-color);
+}
+
+.address .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
 }
